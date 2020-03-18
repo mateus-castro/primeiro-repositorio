@@ -1,2 +1,4 @@
 esse é o meu primeiro arquivo
 aqui só da pra editar como arquivo de texto, ent é bom editar pelo terminal
+
+editando pra enviar para o repositório remoto
