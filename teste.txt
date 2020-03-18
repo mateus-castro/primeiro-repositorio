@@ -1,2 +1,2 @@
 esse é o meu primeiro arquivo
-GAMEIRO È LINDo
+aqui só da pra editar como arquivo de texto, ent é bom editar pelo terminal
