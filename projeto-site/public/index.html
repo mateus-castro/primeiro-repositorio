@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="imagens/iconeKms.png">
+    <title>Kastro's Music School</title>
+</head>
+<body>
+    <!--CABEÇALHO/ MENU-->
+    <div class="header">
+        <div class="container">
+            <div class="title-header">
+                <h1><span class="highlight">Kastro's</span> Music School</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="current"><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <!-- <li><a href="serv.html">AULAS</a></li> -->
+                    <li><a href="cad.html">CADASTRE-SE</a></li>
+                    <li><a href="entra.html">ENTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+
+        <!--texto da showcase-->
+
+    <div class="showcase">
+        <img src="imagens/kastrin.png" alt="" style="width: 1310px; height: 390px;">
+        </div>
+    </div>
+
+    <!--business-->
+
+    <div class="box">
+        <div class="textinBox">Principais Aulas</div>
+        <div class="containerBox">
+            <div class="boxItem" onclick="mudaBoxItem('Violão')">
+                <img src="imagens/violao.png" alt="">
+                <h2>Violão Clássico</h2>
+                <p>
+                    Acordes, técnicas, solos, músicas, isso é só uma pequena parte do que são as aulas de violão.
+                </p>
+                <p>    
+                    O violão é um dos instrumentos mais famosos do mundo e não é por acaso. As facilidades de tocar com amigos, sozinho, em grupos ou como acompanhamento para cantar são pontos fortes do instrumento.
+                </p>
+            </div>
+            <div class="boxItem" onclick="mudaBoxItem('Canto')">
+                <img src="imagens/microfone.png" alt="">
+                <h2>Canto</h2>
+                <p>
+                    Com a instrução adequada – aliando exercícios de aquecimento, postura corporal correta, estudo de percepção musical e técnicas específicas de canto – você pode cantar e fazer bonito.
+                </p>
+                <br>
+                <p>
+                    Idade: 6 até 100
+                </p>
+            </div>
+            <div class="boxItem" onclick="mudaBoxItem('Piano')">
+                <img src="imagens/piano-de-cauda.png" alt="">
+                <h2>Piano</h2>
+                <p>
+                    Conquiste o domínio da independência das mãos com um estudo baseado em repertório irão não apenas te transformar em um pianista ou tecladista.
+                </p>
+                <p> 
+                    Habilidades motoras, de raciocínio e lógica serão desenvolvidas. Além é claro da sensação de calma que a música traz.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="folha">
+        <img src="imagens/maisFolhinhas3.jpg" alt="">
+    </div>
+    <!--formulário-->
+
+    <div class="new">
+        <div class="container">
+            <h1>Receba as novidades!</h1>
+            <form>
+                <input type="email" placeholder="Digite o seu email">
+                <button type="submit" class="butS"><b>ENVIAR</b></button>
+            </form>
+        </div>
+    </div>
+
+        <!--roodapé-->
+
+        <div class="rodape">
+            <div class="container">
+                <h3>Todos os direitos reservados ao Kastro, &COPY; 2020.</h3>
+            </div>
+            <div>
+                <span class="textin">Me encontre também nas redes sociais.</span>
+                <img src="imagens/facebook.png"
+                        alt="Meu Facebook" style="height: 20px;" onclick="face()">
+                <img src="imagens/instagram-esbocado.png" alt="Meu Instagram"
+                        style="height: 20px;" onclick="insta()">
+            </div>
+        </div>
+
+</body>
+</html>
+
+<script>
+    function mudaBoxItem(aula){
+        window.location.href = 'cad.html';
+        alert(`Cadastre-se para saber mais sobre aulas de ${aula}`);
+    }
+</script>

@@ -1,0 +1,507 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    image-resolution: 100%, 100%;
+}   
+                            /*GERAL    PARTE DE CIMA*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.containerBox{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+                            /*HEADER*/
+.header{
+    background: #121212;
+    color: #f2d7e7;
+    padding-top: 30px; 
+    min-height: 70px;
+    border-bottom: #595484 3px solid;
+}
+                        /*ITENS DO HEADER*/
+.header a{
+    color: #f2d7e7;
+    text-decoration: none; /*tirar o sublinhamento do texto*/
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.header li{
+    display: inline; /*tirou a bolinha*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header .title-header{
+    float: left;
+}
+.header .title-header h1{
+    transition: 0.2s;
+    margin: 0;
+}
+
+.header .title-header h1:hover{
+    color: #595484;
+}
+.nav{
+    float: right;
+    margin-top: 10px;
+}
+
+.nav ul li a:hover {
+    background-color: #595484;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.2s;
+    color: #f2d7e7;
+}
+
+
+.header .highlight, .header .current a{
+    color: #595484;
+    font-weight: bold;
+}
+
+.highlight{
+    color: #595484;
+    font-weight: bold;
+}
+
+.caixaContainer{
+    margin: 10px;
+}
+
+/*SHOW CASE*/
+
+.showcase{
+    width: 100%x;
+    height: 390px;
+    text-align: center;
+    color: #f2d7e7;
+}
+.showcase h1{
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.showcase p{
+    font-size: 20px;
+}
+
+
+/*BUSINESS*/
+
+.box{
+    padding: 30px;
+    background: #121212;
+    text-align: center;
+}
+
+.box .boxItem{
+    margin: 14px;
+    border-color: #595484;
+    border-style: solid;
+    padding: 10px;
+    padding-top: 20px;
+    width: 28.5%;
+    transition: 0.2s;
+    height: 400px;
+    text-align: center;
+    float: left;
+    color: #595484;
+    border-radius: 15px;
+    background: #f2d7e7;
+}
+
+.box .boxItem:hover{
+    margin: 14px;
+    border-color: #595484;
+    border-style: solid;
+    padding: 10px;
+    padding-top: 20px;
+    width: 28.5%;
+    height: 400px;
+    text-align: center;
+    float: left;
+    transition: 0.2s;
+    color: #f2d7e7;
+    border-radius: 15px;
+    background: #595484;
+}
+
+.box .boxItem p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.box .boxItem img{
+    width: 90px;
+}
+
+/*FOLHINHAS*/
+.folha {
+    height: 296px;
+    width: 100%;
+}
+
+.folha img{
+    height: 296px;
+    width: 100%;
+}
+
+/*NEW*/
+
+.new {
+    background-color: #121212;
+    padding: 15px;
+    color: #f2d7e7;
+}
+
+.new h1{
+    float: left;
+}
+
+.new form{
+    float: right;
+    padding: 24px;
+}
+
+.new input{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.butS:hover{
+    border-radius: 7px;
+    background: #595484;
+    height: 38px;
+    border: none;
+    width: 70px;
+    transition: 0.2s;
+    padding-right: 20px;
+    padding-right: 20px;
+    color: #f2d7e7;
+}
+
+.butS{
+    border-radius: 7px;
+    background: #f2d7e7;
+    height: 38px;
+    border: solid;
+    border-color: #595484;
+    padding-right: 20px;
+    padding-right: 20px;
+    color: #595484;
+}
+
+b{
+    text-align: center;
+    margin-right: -12px;
+}
+
+/*RODAPÉ*/
+
+.rodape{
+    margin-top: 0px;
+    padding: 15px;
+    background: #595484;
+    color: #f2d7e7;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+
+.sobreEu {
+    margin: 0px;
+    background-image: url(../imagens/maisFolhinhas.jpg);
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+}
+
+.caixaSobre{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    border-color: #595484;
+    border-style: solid;
+}
+
+.caixaSobre h1{
+    color: #595484;
+    text-align: center;
+}
+
+.caixaSobreEsc{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    border-color: #595484;
+    border-style: solid;
+}
+
+.textinBox{
+    color: #f2d7e7;
+    font-size: 40px;
+}
+
+.aulas{
+    background-image: url(../imagens/maisFolhinhas.jpg);
+    width: 100%;
+    background-size: cover;
+    min-height: 720px;
+    text-align: center;
+    width: auto;
+}
+
+.aulaItemV{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    border-color: #595484;
+    border-style: solid;
+    transition: 0.2s;
+}
+
+.aulaItemV:hover{
+    background-image: url(../imagens/violaoBack.png);
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.aulaItemP{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    transition: 0.3s;
+    border-color: #595484;
+    border-style: solid;
+}
+
+.aulaItemP:hover{
+    background-image: url(../imagens/pianoBack.png);
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.aulaItemC{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    transition: 0.3s;
+    border-color: #595484;
+    border-style: solid;
+}
+
+.aulaItemC:hover{
+    background-image: url(../imagens/cantoBack.png);
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.aulaItemP h1, .aulaItemC h1, .aulaItemV h1{
+    text-align: center;
+    color: #595484;
+}
+/* Start http://www.cursors-4u.com */ * 
+{cursor: url(http://cur.cursors-4u.net/others/oth-5/oth481.cur), auto !important;} 
+/* End http://www.cursors-4u.com */
+
+.textin{
+    margin-bottom: 40px;
+}
+
+.mapa{
+    width: 410px;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    border-color: #595484;
+    border-style: solid;
+}
+
+.fotinha{
+    width: 390px;
+    padding: 30px;
+    height: 525px;
+    margin-top: -590px;
+    text-align: justify;
+    color: #f2d7e7;
+    background: #121212;
+    border-radius: 12px;
+    border-color: #595484;
+    border-style: solid;
+    float: right;
+}
+
+.textoMapa{
+    color: #f2d7e7;
+    font-size: 19px;
+}
+
+.backCad {
+    margin: 0px;
+    background-image: url(../imagens/maisFolhinhas.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+}
+
+.backLog {
+    background-image: url(../imagens/maisFolhinhas.jpg);
+    width: 100%;
+    height: 555px;
+    background-size: cover;
+}
+
+.divLogin {
+    margin-top: 60px;
+    background: #1212129c;
+    height: 360px;
+    margin-left: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 360px;
+    color: #595484;
+    font-weight: 300;
+    font-size: large;
+    border: solid;
+    text-align: justify;
+    border-color: #595484;
+}
+
+.divLogin b p{
+    text-align: justify;
+}
+
+.divLogin input{
+    width: 350px;
+    height: 30px;
+    font-size: large;
+}
+
+.divLogin a{
+    text-decoration: none;
+    font-size: small;
+    color: #f2d7e7;
+    margin-left: 112px;
+}
+
+.divLogin a:hover{
+    color: #595484;
+}
+
+
+.btnEntra{
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: #595484;
+    font-weight: bold;
+    background-color: #f2d7e7;
+    border: solid;
+    border-color: #595484;
+    width: 150px;
+    height: 45px;
+}
+
+.btnEntra:hover{
+    color: #f2d7e7;
+    transition: 0.2s;
+    background-color: #595484;
+}
+
+.divCad {
+    margin-top: 60px;
+    background: #1212129c;
+    height: 820px;
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 360px;
+    color: #595484;
+    font-weight: 300;
+    font-size: large;
+    border: solid;
+    text-align: justify;
+    border-color: #595484;
+}
+
+.divCad b p{
+    text-align: justify;
+}
+
+.divCad input{
+    width: 350px;
+    height: 30px;
+    font-size: large;
+}
+
+.btnCad{
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: #595484;
+    font-weight: bold;
+    background-color: #f2d7e7;
+    border: solid;
+    border-color: #595484;
+    width: 150px;
+    height: 45px;
+}
+
+.btnCad:hover{
+    color: #f2d7e7;
+    transition: 0.2s;
+    background-color: #595484;
+}
+
+.violaoCadastro{
+    float: right;
+    margin-top: -840px;
+    margin-right: -130px;
+}

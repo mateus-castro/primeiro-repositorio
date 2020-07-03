@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcoes.js"></script>
+    <title>Perfi</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="title-header">
+                <h1><span class="highlight">Kastro's</span> Music School</h1>
+            </div> 
+            <div class="nav">
+                <ul>
+                    <span style="color: blanchedalmond; margin-right: 30px;" class="nomeUsuarioPerfil">Olá, <b id="b_usuario"></b></span>
+                    <li><a href="#" onclick="clicaV()">Violão</a></li>
+                    <li><a href="#" onclick="clicaP()">Piano</a></li>
+                    <li><a href="#" onclick="clicaC()">Canto</a></li>
+                    <!-- <li><a href="#">Progresso</a></li> -->
+                    <li class="current"><a href="#" onclick="logoff()">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="aulas">
+        <div class="container">
+            <div class="aulaItemV" onclick="clicaV()">
+                <h1>Violão</h1>
+                <p>
+                    <h2>As aulas de violão são desenvolvidas por professores que estão atuando no ramo de ensino musical  há muitos anos e com isso desenvolveram muita experiência.
+                <p>
+                        Tal experiência faz com que as aulas de violão sejam confortáveis e de fácil entendimento pelo aluno. Além do curso de violão completo e personalizado, abordando técnica, prática e teoria, fornecemos o material especializado e os professores também disponibilizam todo o suporte para a compra e manutenção do instrumento.</h2>
+                </p>
+                </p>
+            </div>
+            <div class="aulaItemP" onclick="clicaP()">
+                <h1>Piano</h1>
+                <p>
+                    <h2>Um dos maiores problemas enfrentados pelo adulto iniciante é a frustração provocada por compreender noções teóricas muito antes de ser capaz de executá-las no instrumento. A principal meta do nosso curso é suprir essa defasagem, iniciando o aprendizado com melodias de fácil acesso complementadas por exercícios técnicos simples e eficazes, práticas de leitura rítmica e leitura à primeira vista, além da abordagem de conceitos teóricos à medida que eles vão surgindo na prática.
+
+                <p>
+                        Naturalmente, o curso de piano erudito abrange também alunos não iniciantes. Neste caso, há orientação mais específica no que diz respeito à interpretação (questões estéticas e aspectos estilísticos), escolha de repertório, problemas teóricos e técnica pianista.
+                        Diversos períodos da história são percorridos, ressaltando as diferenças interpretativas entre cada um deles, na música composta para piano. Em geral, o repertório sugerido incorpora uma obra de cada período, escolhida de acordo com o nível técnico e o gosto pessoal do aluno. É possível, no entanto, concentrar o estudo num estilo ou período específico, dependendo das aspirações de cada aluno.
+                </p>
+                <p>
+                        Finalmente, a técnica pianista inclui exercícios específicos (escalas, arpejos e acordes), consciência corporal, exercícios de relaxamento, postura e conhecimento das diversas possibilidades de toque dentro de cada estilo estudado.</h2>
+                </p>
+                </p>
+            </div>
+            <div class="aulaItemC" onclick="clicaC()">
+                <h1>Canto</h1>
+                <p>
+                    <h2>Aulas de canto não servem somente para o aluno aprender a cantar. Muitas vezes o aluno chega com vícios de respiração incorreta e acaba corrigindo com os exercícios de respiração ministrados no curso. Além disso, o curso de canto trabalha afinação, impostação vocal, extensão vocal, vibratos, técnica de microfone, técnicas de aquecimento, técnicas de relaxamento, respiração diafragmática, projeção, articulação e também a saúde e higiene vocal. <b>Clique e saiba mais...</b>
+                <p>
+                        Durante o programa das aulas de canto, o professor trabalhará utilizando várias ferramentas para atingir o melhor desenvolvimento possível e com maior velocidade.</h2>
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
+
+    <div class="rodape">
+        <div class="container">
+            <h3>Todos os direitos reservados ao Kastro, &COPY; 2020.</h3>
+        </div>
+        <div>
+            <span class="textin">Me encontre também nas redes sociais.</span>
+            <img src="imagens/facebook.png"
+                    alt="Meu Facebook" style="height: 20px;" onclick="face()">
+            <img src="imagens/instagram-esbocado.png" alt="Meu Instagram"
+                    style="height: 20px;" onclick="insta()">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    verificar_autenticacao();
+    function clicaC(){
+        window.open('https://teatroloccitane.com.br/evolucao-do-canto-atraves-do-tempo/#:~:text=Não%20sabemos%20ao%20certo%20uma,%2C%20na%20maior%20parte%2C%20cantando.&text=As%20primeiras%20anotações%20encontradas%20sobre,notas%20musicais%20que%20conhecemos%20hoje.', '_blank');
+    }
+
+    function clicaP(){
+        window.open('https://br.yamaha.com/pt/products/contents/musical_instrument_guide/piano/structure/index.html#:~:text=Cristofori%2C%20o%20criador%20do%20primeiro,1655-1731)%20da%20Itália.&text=Na%20verdade%2C%20o%20instrumento%20foi,comum%20agora%2C%20“piano.”', '_blank');
+    }
+
+    function clicaV() {
+        window.open('https://www.infoescola.com/musica/historia-do-violao/#:~:text=-O%20violão%20é%20um%20instrumento,a%20dominação%20do%20império%20romano.', '_blank');
+    }
+</script>

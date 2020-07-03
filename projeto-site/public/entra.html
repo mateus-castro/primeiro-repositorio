@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/funcoes.js"></script>
+    <title>Kastro's Music School</title>
+</head>
+
+<body>
+    <!--background="lov.png"-->
+    <!--CABEÇALHO/MENU-->
+    <div class="header">
+        <div class="container">
+            <div class="title-header">
+                <h1 onclick="home()"><span class="highlight">Kastro's</span> Music School</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <!-- <li><a href="serv.html">AULAS</a></li> -->
+                    <li><a href="cad.html">CADASTRE-SE</a></li>
+                    <li class="current"><a href="entra.html">ENTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="backLog">
+        <div class="container">
+            <form id="form_login" class="divLogin" method="post" onsubmit="return entrar()">
+                <b>
+                    <p>Login:</p>
+                </b>
+                <input type="text" name="login"><br><br>
+                <b>
+                    <p>Senha:</p>
+                </b>
+                <input type="password" name="senha"><br><br>
+                <button id="btn_entrar" class="btnEntra">ENTRAR</button><br>
+                <a href="cad.html">Não tenho uma conta.</a><br>
+                <!-- <a href="recover.hmtl">Esqueci minha senha.</a> -->
+                <img src="aguarde2.gif" id="img_aguarde" style="display: none; height: 30px; margin-left: 160px;">
+            </form>
+        </div>
+    </div>
+
+   
+
+    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+        
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                sessionStorage.login_usuario_meuapp = json.loginUsu;
+                sessionStorage.nome_usuario_meuapp = json.loginUsu; //aqui é o campo q vai mostrar o do usuário nome no perfil
+
+                window.location.href = 'perfil.html';
+                });
+
+               
+            } else {
+                
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+   
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display= 'none';
+        div_erro.style.display = 'block';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

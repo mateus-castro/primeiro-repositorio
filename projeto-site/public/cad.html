@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcoes.js"></script>
+    <title>Kastro's Music School</title>
+</head>
+
+<body>
+    <!--background="lov.png"-->
+    <!--CABEÇALHO/MENU-->
+    <div class="header">
+        <div class="container">
+            <div class="title-header">
+                <h1 onclick="home()"><span class="highlight">Kastro's</span> Music School</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <!-- <li><a href="serv.html">AULAS</a></li> -->
+                    <li class="current"><a href="cad.html">CADASTRE-SE</a></li>
+                    <li><a href="entra.html">ENTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="backCad">
+        <div class="container">
+            <form id="form_cad" class="divCad" method="post">
+                <b>
+                    <p>Nome:</p>
+                </b>
+                <input type="text" name="cadNome"><br><br>
+                <b>
+                    <p>Email:</p>
+                </b>
+                <input type="email" name="cadEmail"><br><br>
+                <b>
+                    <p>Telefone:</p>
+                </b>
+                <input type="number" name="cadTel"><br><br>
+                <b>
+                    <p>Login:</p>
+                </b>
+                <input type="text" name="cadLogin"><br><br>
+                <b>
+                    <p>Senha:</p>
+                </b>
+                <input type="password" name="cadSenha"><br><br>
+                <b>
+                    <p>Confirme a senha:</p>
+                </b>
+                <input type="password" name="confirmaSenha"><br><br>
+                <button id="btn_cadastrar" class="btnCad">CADASTRE-SE</button><br>
+            </form>
+            <div class="violaoCadastro"><img src="imagens/violaCad2.png" alt="" style="height: 800px;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
